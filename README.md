@@ -1,3 +1,4 @@
+MYSQL Credentials : config.inc.php
 Database Name : I2I_MON
 Databse Dump : db/I2I_MON.sql
 Modify Logo ,Header Copyright  : tpl/main.tpl.html
