@@ -1,0 +1,36 @@
+<!--%tpl_main-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    {auto_refresh}
+    <title>PebbleJet Monitor</title>
+    <link rel="Shortcut Icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+  	<div id="header">
+        <img alt="PebbleJet Server Monitor" src="img/pjlogo.png">
+    </div>
+    <div id="topnav">
+            <a href="index.php?type=servers" class="{active_servers}">{label_servers}</a>
+            <a href="index.php?type=users" class="{active_users}">{label_users}</a>
+            <a href="index.php?type=log" class="{active_log}">{label_log}</a>
+            <a href="index.php?type=config" class="{active_config}">{label_config}</a>
+            <!-- a href="index.php?action=check">{label_update}</a-->
+    </div>
+    <div id="pageContent">
+      <!-- div class="header">
+        <div class="opensource"><a href="index.php"><img src="img/pjlogo.png" alt="Open Source" class="logo"/></a></div>
+        <div class="title"><h1>{title}</h1></div>
+        
+      </div-->
+      <div id="content_main">
+        {content}
+      </div>
+    </div>
+    <div id="copy">Copyright &copy; 2013 PebbleJet.com&trade;. All rights reserved</div>
+  </body>
+</html>
+<!--%%tpl_main-->
+
+<!--%tpl_main_auto_refresh--><meta http-equiv="refresh" content="{seconds}" /><!--%%tpl_main_auto_refresh-->
